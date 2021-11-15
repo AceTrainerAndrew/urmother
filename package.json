@@ -3,7 +3,11 @@
   "description": "An awesome FNF mod.",
   "version": "1.0.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+   "buildClient": "npm install",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "npm run"
   },
   "repository": {
     "type": "git",
